@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>南京审计大学金审学院</title>
+<style>
+:root{color-scheme:dark}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#0c0c0c;color:#d7e2ea;font-family:Kanit,Noto Sans SC,Segoe UI,Microsoft YaHei,system-ui,sans-serif;overflow-x:clip;-webkit-font-smoothing:antialiased}
+.hero-heading{background:linear-gradient(180deg,#646973 0%,#bbccd7 100%);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+header{position:fixed;left:0;right:0;top:0;z-index:50;backdrop-filter:blur(14px);background:rgba(12,12,12,.55);border-bottom:1px solid rgba(215,226,234,.12)}
+nav{max-width:1200px;margin:0 auto;padding:16px 22px;display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:14px}
+.logo{font-weight:700;font-size:17px;letter-spacing:.1em}
+.nav-links{display:flex;gap:22px;flex-wrap:wrap}
+.nav-links a{font-size:14px;color:#d7e2ea;opacity:.85;transition:opacity .2s}
+.nav-links a:hover{opacity:1}
+.hero{position:relative;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:120px 22px 80px;background:linear-gradient(180deg,#0c0c0c,#121820)}
+.hero-inner{max-width:1100px;width:100%;text-align:center}
+.hero h1{font-size:clamp(38px,9.5vw,100px);line-height:1;margin-top:18px}
+.hero .lead{max-width:960px;margin:18px auto 0;color:#d7e2ea;opacity:.92;font-size:clamp(16px,2.1vw,22px);line-height:1.6}
+.pill{display:inline-flex;align-items:center;justify-content:center;border-radius:9999px;padding:14px 22px;font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#fff;text-decoration:none;transition:transform .2s,box-shadow .2s,filter .2s;background:linear-gradient(123deg,#18011f 0%,#b600a8 37%,#7621b0 72%,#be4c00 100%);box-shadow:0 4px 4px rgba(181,1,167,.25),inset 4px 4px 12px #7721b1;outline:2px solid #fff;outline-offset:-3px}
+.pill:hover{transform:translateY(2px);filter:brightness(1.1)}
+.ghost{display:inline-flex;align-items:center;justify-content:center;border-radius:9999px;padding:14px 22px;font-weight:500;font-size:13px;letter-spacing:.18em;text-transform:uppercase;color:#d7e2ea;text-decoration:none;border:2px solid rgba(215,226,234,.85);background:rgba(255,255,255,.04);transition:background-color .2s,transform .2s}
+.ghost:hover{background:rgba(215,226,234,.1);transform:translateY(2px)}
+.section{padding:80px 22px}
+.section-inner{max-width:1200px;margin:0 auto}
+.section-title{font-size:clamp(30px,7.8vw,84px);line-height:1;margin-bottom:16px}
+.section-sub{color:#d7e2ea;opacity:.88;max-width:880px;margin:0 auto;font-size:clamp(15px,1.8vw,20px);line-height:1.7}
+.marquee-wrap{overflow:hidden;margin-top:28px;display:flex;flex-direction:column;gap:18px}
+.marquee{display:flex;gap:14px;animation:marquee 24s linear infinite}
+.marquee-reverse{display:flex;gap:14px;animation:marquee-reverse 28s linear infinite}
+.marquee img{height:150px;border-radius:16px;background:#181d22}
+@keyframes marquee{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
+@keyframes marquee-reverse{0%{transform:translateX(-50%)}100%{transform:translateX(0)}}
+.cards{display:grid;gap:18px;margin-top:34px}
+.cards-3{grid-template-columns:repeat(auto-fit,minmax(250px,1fr))}
+.card{background:rgba(255,255,255,.035);border:1px solid rgba(215,226,234,.14);border-radius:22px;padding:22px;transition:transform .2s}
+.card:hover{transform:translateY(-4px)}
+.card h3{font-size:19px;margin:8px 0 6px}
+.card p{color:#d7e2ea;opacity:.82;line-height:1.6;font-size:15px}
+.service-item + .service-item{border-top:1px solid rgba(12,12,12,.13)}
+.project-stack{position:relative}
+.project-card{min-height:clamp(520px,80vh,920px);border-radius:clamp(32px,5vw,60px);border:2px solid rgba(215,226,234,.85);background:#0c0c0c;padding:clamp(14px,2vw,24px)}
+.project-image{border-radius:clamp(28px,4.5vw,54px);overflow:hidden;background:#181d22}
+.project-image img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit}
+.grid-2{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.grid-4{grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+footer{border-top:1px solid rgba(215,226,234,.12);background:#0c0c0c}
+.footer-inner{max-width:1200px;margin:0 auto;padding:28px 22px;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:14px;font-size:13px}
+.reveal{opacity:0;transform:translateY(24px);transition:opacity .7s ease,transform .7s ease;will-change:opacity,transform}
+.reveal.in-view{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){.marquee{animation:none!important}.reveal{opacity:1;transform:none;transition:none}}
+</style>
+</head>
+<body>
+<header>
+<nav>
+<div class="logo">JINSHEN · 金审</div>
+<a class="pill" href="file:///E:/%E5%8D%97%E4%BA%AC%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%AD%A6%E9%87%91%E5%AE%A1%E5%AD%A6%E9%99%A2%E5%AE%98%E7%BD%91/details.html" style="font-size:12px;padding:12px 18px">DETAILS</a>
+</nav>
+</header>
+
+<section class="hero" id="hero">
+<div class="hero-inner">
+<div style="display:inline-flex;align-items:center;gap:10px;border:1px solid rgba(255,255,255,.12);background:rgba(255,255,255,.05);padding:10px 16px;border-radius:9999px;backdrop-filter:blur(10px)">
+<span style="font-size:12px;letter-spacing:.24em;text-transform:uppercase">Nanjing Audit University Jinshen College</span>
+</div>
+<h1 class="hero-heading" style="margin-top:18px">Hi, i&apos;m jinshen</h1>
+<p class="lead">Nanjing Audit University Jinshen College is the only independent college in the country named after 'audit'. It’s located in Nanjing Xianlin University Town and focuses on training applied talents.</p>
+<div style="margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+<a class="pill" href="file:///E:/%E5%8D%97%E4%BA%AC%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%AD%A6%E9%87%91%E5%AE%A1%E5%AD%A6%E9%99%A2%E5%AE%98%E7%BD%91/details.html">DETAILS</a>
+<a class="ghost" href="#about">About</a>
+</div>
+<div style="position:relative;margin-top:28px;display:flex;justify-content:center">
+<img id="heroImage" src="金小狮.png" alt="金审形象" style="max-width:280px;width:100%;height:auto;display:block;margin:0 auto;border:none;object-fit:contain;object-position:center;transform-origin:center center">
+</div>
+</div>
+</section>
+
+<section style="background:#0c0c0c;padding:80px 22px">
+<div class="section-inner">
+<div style="font-size:12px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(215,226,234,.8)">Campus visuals</div>
+<div class="marquee-wrap">
+<div class="marquee" aria-label="视觉校园">
+<img src="image/体艺馆-1.jpg" alt="校园">
+<img src="image/体艺馆-2.jpg" alt="校园">
+<img src="image/俯瞰图-1.jpg" alt="校园">
+<img src="image/俯瞰图-2.jpg" alt="校园">
+<img src="image/光影金审-1.jpg" alt="校园">
+<img src="image/光影金审-2.jpg" alt="校园">
+<img src="image/光影金审-3.jpg" alt="校园">
+<img src="image/光影金审-4.jpg" alt="校园">
+<img src="image/光影金审-5.jpg" alt="校园">
+<img src="image/光影金审-6.jpg" alt="校园">
+<img src="image/光影金审-7.jpg" alt="校园">
+<img src="image/军训风采-1.jpg" alt="校园">
+<img src="image/军训风采-2.jpg" alt="校园">
+<img src="image/北门-1.jpg" alt="校园">
+<img src="image/北门-2.jpg" alt="校园">
+<img src="image/图书馆-1.jpg" alt="校园">
+<img src="image/图书馆-2.jpg" alt="校园">
+<img src="image/学则路地铁站.jpg" alt="校园">
+<img src="image/宿舍区-1.jpg" alt="校园">
+<img src="image/宿舍区-2.jpg" alt="校园">
+<img src="image/教学楼--2.jpg" alt="校园">
+<img src="image/教学楼-1.jpg" alt="校园">
+<img src="image/新多媒体教室-1.jpg" alt="校园">
+<img src="image/新多媒体教室-2.jpg" alt="校园">
+</div>
+<div class="marquee marquee-reverse" aria-hidden="true">
+<img src="image/春意盎然-1.jpg" alt="校园">
+<img src="image/春意盎然-2.jpg" alt="校园">
+<img src="image/春意盎然-3.jpg" alt="校园">
+<img src="image/晚霞-1.jpg" alt="校园">
+<img src="image/晚霞-2.jpg" alt="校园">
+<img src="image/晚霞-3.jpg" alt="校园">
+<img src="image/晚霞-4.jpg" alt="校园">
+<img src="image/晚霞-5.jpg" alt="校园">
+<img src="image/晚霞-6.jpg" alt="校园">
+<img src="image/晚霞-7.jpg" alt="校园">
+<img src="image/校园美景-1.jpg" alt="校园">
+<img src="image/田径运动会开幕式-1.jpg" alt="校园">
+<img src="image/田径运动会开幕式-2.jpg" alt="校园">
+<img src="image/田径运动会开幕式-3.jpg" alt="校园">
+<img src="image/秋日校园-1.jpg" alt="校园">
+<img src="image/秋日校园-2.jpg" alt="校园">
+<img src="image/秋日校园-3.jpg" alt="校园">
+<img src="image/荷塘.jpg" alt="校园">
+<img src="image/金审雪景-1.jpg" alt="校园">
+<img src="image/金审雪景-2.jpg" alt="校园">
+<img src="image/金审雪景-3.jpg" alt="校园">
+<img src="image/金审雪景-4.jpg" alt="校园">
+<img src="image/食堂-1.jpg" alt="校园">
+<img src="image/食堂-2.jpg" alt="校园">
+</div>
+</div>
+</div>
+</section>
+
+<section class="section reveal" id="about">
+<div class="section-inner" style="text-align:center">
+<div style="font-size:13px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(215,226,234,.8)">关于我</div>
+<h2 class="hero-heading section-title reveal" style="margin-top:10px">About me</h2>
+<p class="section-sub reveal" style="max-width:1200px">南京审计大学金审学院是一所特色鲜明、区域一流的高水平综合性应用型本科高校，是我国唯一一所以“审计”命名的独立学院。2002年经江苏省教育厅批准成立为南京审计学院公有民办二级学院，2005 年经教育部批准转制为独立学院。学校位于高校云集、科教繁盛的南京市仙林大学城，共享南京审计大学和仙林大学城优质资源。经过 23 年办学实践，筚路蓝缕、薪火相传，具备了一定品牌知名度和社会影响力。</p>
+<a class="pill reveal" href="file:///E:/%E5%8D%97%E4%BA%AC%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%AD%A6%E9%87%91%E5%AE%A1%E5%AD%A6%E9%99%A2%E5%AE%98%E7%BD%91/details.html" style="margin-top:10px">DETAILS</a>
+</div>
+</section>
+
+<section class="section reveal" style="background:#fff;color:#0c0c0c">
+<div style="border-radius:40px;padding:clamp(44px,6vw,80px) 22px">
+<div class="section-inner" style="text-align:center">
+<div style="font-size:13px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(0,0,0,.7)">简介</div>
+<h2 class="section-title reveal" style="color:#0c0c0c;margin-top:10px">Introduction</h2>
+</div>
+<div class="cards reveal" style="max-width:1100px;margin-left:auto;margin-right:auto">
+<div class="service-item" style="padding:22px 0;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+<div style="font-size:clamp(34px,9.5vw,130px);font-weight:900;line-height:1;color:#0c0c0c">01</div>
+<div style="flex:1 1 260px">
+<div style="font-size:clamp(16px,2.1vw,22px);font-weight:500;text-transform:uppercase;letter-spacing:.08em">学校概况</div>
+<p style="margin-top:10px;font-size:clamp(14px,1.55vw,18px);line-height:1.65;color:#0c0c0c;max-width:720px">南京审计大学金审学院，全国唯一以“审计”命名的独立学院，位于南京仙林大学城，致力于培养应用型人才。</p>
+</div>
+</div>
+<div class="service-item" style="padding:22px 0;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+<div style="font-size:clamp(34px,9.5vw,130px);font-weight:900;line-height:1;color:#0c0c0c">02</div>
+<div style="flex:1 1 260px">
+<div style="font-size:clamp(16px,2.1vw,22px);font-weight:500;text-transform:uppercase;letter-spacing:.08em">院系与专业</div>
+<p style="margin-top:10px;font-size:clamp(14px,1.55vw,18px);line-height:1.65;color:#0c0c0c;max-width:720px">学校设有审计学院、金融与经济学院、管理学院、信息科学与工程学院、教师教育学院、艺术设计学院、国际教育学院、康养学院及国际智慧康养学院等9个二级学院，开设审计学、资产评估、计算机科学与技术等23个本科专业，形成经、管、工、艺、教等多学科协同发展体系。</p>
+</div>
+</div>
+<div class="service-item" style="padding:22px 0;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+<div style="font-size:clamp(34px,9.5vw,130px);font-weight:900;line-height:1;color:#0c0c0c">03</div>
+<div style="flex:1 1 260px">
+<div style="font-size:clamp(16px,2.1vw,22px);font-weight:500;text-transform:uppercase;letter-spacing:.08em">招生就业</div>
+<p style="margin-top:10px;font-size:clamp(14px,1.55vw,18px);line-height:1.65;color:#0c0c0c;max-width:720px">学校构建“招生-培养-就业”联动机制，生源质量稳居同类前列。毕业生就业率与升学质量双高，超半数入职党政机关、会计师事务所及金融系统，考研率15%，大批学子考入南大、墨尔本大学等名校，获评省就业工作A等高校。</p>
+</div>
+</div>
+<div class="service-item" style="padding:22px 0;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+<div style="font-size:clamp(34px,9.5vw,130px);font-weight:900;line-height:1;color:#0c0c0c">04</div>
+<div style="flex:1 1 260px">
+<div style="font-size:clamp(16px,2.1vw,22px);font-weight:500;text-transform:uppercase;letter-spacing:.08em">校园文化与生活</div>
+<p style="margin-top:10px;font-size:clamp(14px,1.55vw,18px);line-height:1.65;color:#0c0c0c;max-width:720px">校园文化丰富，50余个社团涵盖学术、艺术等方向，T3管理会计俱乐部等为特色品牌。常态化举办读书节、科技节、艺术节及迎新生、迎新年晚会，构筑开放多元的成长平台，助力学子全面发展。</p>
+</div>
+</div>
+<div class="service-item" style="padding:22px 0;display:flex;flex-wrap:wrap;gap:18px;align-items:flex-start">
+<div style="font-size:clamp(34px,9.5vw,130px);font-weight:900;line-height:1;color:#0c0c0c">05</div>
+<div style="flex:1 1 260px">
+<div style="font-size:clamp(16px,2.1vw,22px);font-weight:500;text-transform:uppercase;letter-spacing:.08em">科研与社会服务</div>
+<p style="margin-top:10px;font-size:clamp(14px,1.55vw,18px);line-height:1.65;color:#0c0c0c;max-width:720px">学校作为省“教育强省建设立德树人机制综合改革试点”，坚持应用驱动研究，组建智能审计等特色团队，探索前沿交叉领域。深化校企、校协合作，与华为等共建产业学院，赋能产业升级。设立继续教育学院，构建多层次办学体系，服务社会成效显著。</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+
+
+<section class="reveal" style="background:#0c0c0c;color:#d7e2ea;padding:clamp(50px,7vw,90px) 22px">
+<div style="border-radius:40px;padding:clamp(44px,6vw,80px) 22px;text-align:center">
+<div style="font-size:13px;font-weight:600;letter-spacing:.28em;text-transform:uppercase;color:rgba(215,226,234,.8)">联系我</div>
+<h2 class="section-title reveal" style="color:#fff;margin-top:10px">Contact Me</h2>
+<p class="section-sub reveal" style="color:rgba(215,226,234,.82)">欢迎各位意向考生、家长通过以下方式与我们取得联系，我们将尽快回复。</p>
+<div class="cards grid-2 reveal" style="max-width:1000px;margin:28px auto 0;text-align:left">
+<div class="card"><div style="font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(215,226,234,.78)">招生咨询</div><div style="margin-top:8px;font-size:16px;font-weight:700;color:#d7e2ea">(025)85780055<br>(025)85780077</div></div>
+<div class="card"><div style="font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(215,226,234,.78)">电子邮箱</div><div style="margin-top:8px;font-size:16px;font-weight:700;color:#d7e2ea">jsxyzsb@163.com</div></div>
+<div class="card"><div style="font-size:12px;font-weight:600;letter-spacing:.24em;text-transform:uppercase;color:rgba(215,226,234,.78)">校区地址</div><div style="margin-top:8px;font-size:16px;font-weight:700;color:#d7e2ea">江苏省南京市仙林大学城仙林大道100号</div></div>
+</div>
+<div style="margin-top:26px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap">
+<a class="pill" href="file:///E:/%E5%8D%97%E4%BA%AC%E5%AE%A1%E8%AE%A1%E5%A4%A7%E5%AD%A6%E9%87%91%E5%AE%A1%E5%AD%A6%E9%99%A2%E5%AE%98%E7%BD%91/details.html">DETAILS</a>
+<a class="ghost" href="mailto:jsxyzsb@163.com" style="border-color:rgba(215,226,234,.85);color:#d7e2ea">发送邮件</a>
+</div>
+</div>
+</section>
+
+<footer class="reveal" style="border-top:1px solid rgba(215,226,234,.12);background:#0c0c0c;color:#d7e2ea;display:flex;justify-content:center;align-items:center;padding:28px 22px"><div style="text-align:center">
+<div class="footer-inner" style="text-align:center">
+<div>
+<div style="margin-top:8px;margin-left:auto;margin-right:auto;font-size:13px;line-height:1.6;color:rgba(215,226,234,.78);white-space:nowrap;max-width:100%;overflow:hidden;text-overflow:clip">© <span id="year"></span> 万枫科技 © WanFeng-Tech 版权所有</div>
+</div>
+<div style="display:flex;flex-wrap:wrap;gap:10px"></div>
+</div>
+
+</div></footer>
+
+<script>
+document.getElementById("year").textContent = new Date().getFullYear();
+const io = new IntersectionObserver(entries => entries.forEach(e => { if (e.isIntersecting) e.target.classList.add("in-view"); }), { threshold: 0.12, rootMargin: "0px 0px -30px 0px" });
+document.querySelectorAll(".reveal").forEach(el => io.observe(el));
+
+document.querySelectorAll(".service-item, .card").forEach((el, idx) => {
+  el.style.transitionDelay = `${idx * 0.06}s`;
+});
+</script>
+<script>
+const heroImage = document.getElementById("heroImage");
+if (heroImage) {
+  window.addEventListener("scroll", () => {
+    const scrollY = window.scrollY || window.pageYOffset;
+    const scale = 1 + Math.min(scrollY * 0.0012, 0.6);
+    heroImage.style.transform = `scale(${scale})`;
+  });
+}
+</script>
+
+<script>
+const heroHeading = document.querySelector('.hero-heading');
+const heroLead = document.querySelector('.hero .lead');
+
+function applyWhipEffect() {
+  const scrollY = window.scrollY || window.pageYOffset;
+  const factor = Math.min(scrollY * 0.0018, 1);
+
+  if (heroHeading) {
+    heroHeading.style.transform = `translateX(${16 * factor}px) translateY(${10 * factor}px) rotate(${1.8 * factor}deg)`;
+    heroHeading.style.filter = `blur(${0.6 * factor}px)`;
+    heroHeading.style.opacity = 1 - 0.25 * factor;
+  }
+
+  if (heroLead) {
+    heroLead.style.transform = `translateX(${10 * factor}px) translateY(${6 * factor}px) rotate(${1.2 * factor}deg)`;
+    heroLead.style.filter = `blur(${0.4 * factor}px)`;
+    heroLead.style.opacity = 1 - 0.2 * factor;
+  }
+}
+
+window.addEventListener('scroll', applyWhipEffect);
+applyWhipEffect();
+</script>
+</body>
+</html>
+
+
+
+
